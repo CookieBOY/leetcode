@@ -1,7 +1,3 @@
-from copyreg import constructor
-from sys import prefix
-
-
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:     
         commonPrefix = min(strs, key=len)
@@ -17,7 +13,7 @@ class Solution:
         return commonPrefix
 
 classInstance = Solution()
-# print(classInstance.longestCommonPrefix(["dog","racecar","car"]))
-# print(classInstance.longestCommonPrefix(["flower","flow","flight"]))
+print(classInstance.longestCommonPrefix(["dog","racecar","car"]))
+print(classInstance.longestCommonPrefix(["flower","flow","flight"]))
 print(classInstance.longestCommonPrefix(["ab", "a"]))
-# print(classInstance.longestCommonPrefix(["cir","car"]))
+print(classInstance.longestCommonPrefix(["cir","car"]))
